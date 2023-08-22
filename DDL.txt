@@ -1,0 +1,12 @@
+CREATE TABLE `complaint` (
+ `id` bigint(20) NOT NULL AUTO_INCREMENT,
+ `created_at` datetime DEFAULT current_timestamp(),
+ `name` varchar(100) DEFAULT NULL,
+ `area` varchar(1000) DEFAULT NULL,
+ `spec_area` varchar(1000) DEFAULT NULL,
+ `unsafe_activity` text DEFAULT NULL,
+ `unsafe_envi` text DEFAULT NULL,
+ `file_name` longtext DEFAULT NULL,
+ `recom` text DEFAULT NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4
